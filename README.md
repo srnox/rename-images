@@ -28,21 +28,30 @@ This script reads a list of item names from a text file and renames a set of ima
    project_folder/
    ├── rename_images.py
    ├── paste.txt (or items.txt, item_names.txt)
-   └── original_images/
-       ├── image1.png
-       ├── image2.png
-       └── ...
+   ├── original_images/     (create this folder and place images here)
+   │   ├── image1.png
+   │   ├── image2.png
+   │   └── ...
+   └── renamed_images/      (this folder will be created automatically for output)
    ```
+
+   **Important:**
+   - You MUST create the "original_images" folder and place all your images there
+   - The "renamed_images" folder will be created automatically when the script runs
+   - All renamed images will be saved to the "renamed_images" folder (original files remain untouched)
 
 ## Usage
 
-1. Place your images in the "original_images" folder
-2. Create a text file with your item names (one per line)
-3. Run the script:
+1. Create the "original_images" folder if it doesn't exist
+2. Place all your images that need to be renamed in the "original_images" folder
+3. Create a text file with your item names (one per line)
+4. Run the script:
    ```
    python rename_images.py
    ```
-4. Find your renamed images in the "renamed_images" folder
+5. Find your renamed images in the "renamed_images" folder
+   - This folder will be created automatically
+   - Your original images will remain unchanged in the "original_images" folder
 
 ## Text File Format
 
