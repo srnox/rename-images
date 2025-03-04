@@ -36,7 +36,7 @@ This script reads a list of item names from a text file and renames a set of ima
    ```
 
    **Important:**
-   - You MUST create the "original_images" folder and place all your images there
+   - You MUST create the "original_images" folder and place all your images there that you need to be renamed
    - The "renamed_images" folder will be created automatically when the script runs
    - All renamed images will be saved to the "renamed_images" folder (original files remain untouched)
 
